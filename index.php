@@ -16,7 +16,7 @@
             <label for="weight">Enter your weight in kilograms (example: 99)</label><br>
             <input type="text" id="weight" name="weight" placeholder="Enter your weight here:">
             <br>
-            <label for="height">Enter your height in centimeter(example: 185)</label><br>
+            <label for="height">Enter your height in centimeters(example: 185)</label><br>
             <input type="text" id="height" name="height" placeholder="Enter your height here:">
             <br>
             <input type="submit" value="Submit">
@@ -32,10 +32,9 @@
                 if (!isset($_POST['height']) || empty($height))
                     print('<h3 style="color: red">Please enter your height!</h3>');
 
-                if (!is_numeric($weight) || $weight == 0||!is_numeric($height) ||$height == 0) {
+                if (!is_numeric($weight) || $weight == 0|| !is_numeric($height) ||$height == 0) {
                     print('<h3 style="color: red">Wrong input (use numbers) !</h3>');
                 } else {
-                    
                     $calcHeight =$height / 100;
                     $bmi = $weight / ($calcHeight * $calcHeight);
                     // echo "<h3 style=\"color: green\">$bmi</h3>";
