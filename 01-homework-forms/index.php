@@ -39,7 +39,7 @@
                     $bmi = $weight / ($calcHeight * $calcHeight);
                     // echo "<h3 style=\"color: green\">$bmi</h3>";
                     switch ($bmi) {
-                        case $bmi >= 30:print('<h3 style="color: green">Your are Tank !</h3>');
+                        case $bmi >= 30: print('<h3 style="color: green">Your are Tank !</h3>');
                             break;
                         case $bmi < 30 && $bmi > 25:print('<h3 style="color: green">Your are Overweight !</h3>');
                             break;
